@@ -1,0 +1,35 @@
+1. Início do programa.
+2. Verificar se a quantidade de argumentos de linha de comando é igual a 2.
+3. Se não for igual a 2, exibir uma mensagem de uso e encerrar o programa com código de erro 1.
+4. Caso contrário, prosseguir com o programa.
+
+5. Iniciar um loop para verificar se cada caractere do segundo argumento é um dígito.
+6. Para cada caractere 'i' no segundo argumento (chave):
+   7. Se 'i' não for um dígito, exibir uma mensagem de erro e encerrar o programa com código de erro 1.
+8. Finalizar o loop.
+
+9. Converter o segundo argumento (chave) em um número inteiro e atribuir à variável 'k'.
+10. Verificar se 'k' é um número não negativo.
+11. Se 'k' for negativo, exibir uma mensagem de erro e encerrar o programa com código de erro 1.
+
+12. Solicitar ao usuário que insira o texto a ser criptografado e armazenar na variável 'text'.
+13. Inicializar uma string vazia para armazenar o texto criptografado.
+
+14. Iniciar um loop para percorrer cada caractere do texto:
+15. Para cada caractere 'i' no texto:
+   16. Se 'i' for uma letra:
+   17. Se 'i' for letra maiúscula:
+       18. Criptografar a letra maiúscula usando a chave 'k'.
+       19. Adicionar o caractere criptografado à string do texto criptografado.
+   20. Se 'i' for letra minúscula:
+       21. Criptografar a letra minúscula usando a chave 'k'.
+       22. Adicionar o caractere criptografado à string do texto criptografado.
+   23. Senão, se 'i' não for uma letra:
+       24. Adicionar 'i' à string do texto criptografado (mantendo caracteres não-letras inalterados).
+   25. Finalizar o loop.
+
+26. Exibir a mensagem "Ciphertext: ".
+27. Exibir a string do texto criptografado.
+28. Exibir uma quebra de linha.
+
+29. Fim do programa.

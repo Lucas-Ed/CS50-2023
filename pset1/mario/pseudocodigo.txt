@@ -1,0 +1,10 @@
+1. Solicite ao usuário para inserir a altura da pirâmide.
+2. Leia a altura fornecida pelo usuário.
+3. Enquanto a altura não estiver dentro do intervalo de 1 a 8, repita os passos 1 e 2.
+4. Para i de 1 até a altura, faça o seguinte:
+   a. Para j de altura - i até 1, faça o seguinte:
+      i. Imprima um espaço em branco.
+   b. Para k de 1 até i, faça o seguinte:
+      i. Imprima um caractere '#' para representar os tijolos da pirâmide.
+   c. Imprima uma quebra de linha para iniciar uma nova linha.
+5. Fim do programa.

@@ -1,0 +1,7 @@
+Inicialize uma variável change como um float.
+Use um loop do-while para solicitar ao usuário o valor da troca devida.
+Dentro do loop, verifique se a change é maior ou igual a 0. Se não for, continue solicitando a entrada até que seja válida.
+Converta o valor change para centavos, multiplicando por 100 e arredondando para o inteiro mais próximo.
+Inicialize uma variável coins como 0 para acompanhar o número mínimo de moedas necessárias.
+Use loops while para calcular o número mínimo de moedas de cada tipo (25 centavos, 10 centavos, 5 centavos e 1 centavo) e subtrair o valor correspondente de centavos a cada vez.
+Finalmente, imprima o valor de coins, que representa o número mínimo de moedas necessárias para fazer a troca.

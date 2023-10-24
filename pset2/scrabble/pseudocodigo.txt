@@ -1,0 +1,62 @@
+Função compute_score()
+
+// Função para calcular a pontuação de uma palavra
+
+def compute_score(word):
+
+  // Inicializa a pontuação como 0
+  score = 0
+
+  // Itera sobre cada caractere da palavra
+  for i in range(len(word)):
+
+    // Obtém o valor ASCII do caractere
+    ascii_value = ord(word[i])
+
+    // Se o caractere é maiúsculo, adiciona os pontos correspondentes
+    if ascii_value >= 65 and ascii_value <= 90:
+      score += POINTS[ascii_value - 65]
+
+    // Se o caractere é minúsculo, adiciona os pontos correspondentes
+    elif ascii_value >= 97 and ascii_value <= 122:
+      score += POINTS[ascii_value - 97]
+
+  // Retorna a pontuação
+  return score
+Função main()
+
+// Função principal do programa
+
+def main():
+
+  // Obtém as palavras dos jogadores
+  word1 = input("Jogador 1: ")
+  word2 = input("Jogador 2: ")
+
+  // Calcula a pontuação para cada palavra
+  score1 = compute_score(word1)
+  score2 = compute_score(word2)
+
+  // Determina o vencedor
+  if score1 > score2:
+    print("Jogador 1 vence!")
+  elif score2 > score1:
+    print("Jogador 2 vence!")
+  else:
+    print("Empate!")
+
+Explicação
+
+A função compute_score() é responsável por calcular a pontuação de uma palavra. Ela faz isso iterando sobre cada caractere da palavra e adicionando os pontos correspondentes.
+
+O valor ASCII de cada caractere é usado para determinar sua pontuação. As letras maiúsculas têm pontuações de 1 a 4, enquanto as letras minúsculas têm pontuações de 1 a 8. As pontuações especiais são 5 para K, 8 para J, X, Q e Z, e 10 para V e W.
+
+A função main() obtém as palavras dos jogadores e calcula sua pontuação. Em seguida, ela determina o vencedor e imprime uma mensagem apropriada.
+
+Adições possíveis
+
+O script pode ser aprimorado de várias maneiras, incluindo:
+
+Suporte a palavras com letras duplicadas: O script atual não leva em consideração letras duplicadas. Para adicionar suporte a isso, seria necessário manter um registro das letras já contadas e aumentar a pontuação apenas uma vez por letra.
+Suporte a quadrados e triângulos de palavras: O script atual não leva em consideração quadrados e triângulos de palavras. Para adicionar suporte a isso, seria necessário verificar se uma palavra está alinhada com um quadrado ou triângulo e, em caso afirmativo, aumentar sua pontuação.
+Suporte a letras especiais: O script atual não leva em consideração letras especiais, como as letras que fornecem um bônus de +2 ou +3. Para adicionar suporte a isso, seria necessário verificar se uma letra é especial e, em caso afirmativo, aumentar sua pontuação.

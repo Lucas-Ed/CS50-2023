@@ -1,0 +1,31 @@
+função desenhar_piramide(altura)
+    para i de 1 até altura faça
+        para j de 1 até altura - i faça
+            escreva(" ")
+        fim para
+        para j de 1 até i faça
+            escreva("#")
+        fim para
+        escreva("  ")  // Largura da "lacuna"
+        para j de 1 até i faça
+            escreva("#")
+        fim para
+        escreva("\n")
+    fim para
+fim função
+
+função main()
+    altura <- -1  // Inicializa com um valor fora do intervalo permitido
+
+    enquanto altura < 1 ou altura > 8 faça
+        escreva("Altura: ")
+        leia(altura)
+        se altura < 1 ou altura > 8 então
+            escreva("Altura fora do intervalo permitido. Tente novamente.\n")
+        fim se
+    fim enquanto
+
+    desenhar_piramide(altura)
+fim função
+
+main()  // Chama a função principal

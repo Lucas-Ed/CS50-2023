@@ -1,0 +1,19 @@
+1. Solicitar ao usuário que insira a string a ser analisada.
+2. Inicializar contadores: letterCount = 0, wordCount = 0, sentenceCount = 0.
+3. Para cada caractere 'i' na string:
+    4. Se 'i' for uma letra (maiúscula ou minúscula):
+        5. Incrementar letterCount.
+    6. Se 'i' for um espaço em branco ou o final da string:
+        7. Incrementar wordCount.
+    8. Se 'i' for '.', '!', ou '?':
+        9. Incrementar sentenceCount.
+10. Calcular a média de palavras por 100 letras: averageWordsPer100 = (100 / (float) wordCount) * (float) letterCount.
+11. Calcular a média de sentenças por 100 palavras: averageSentencePer100 = (100 / (float) wordCount) * (float) sentenceCount.
+12. Calcular o índice de leitura: readingIndex = round(0.0588 * averageWordsPer100 - 0.296 * averageSentencePer100 - 15.8).
+13. Se readingIndex for menor que 1:
+    14. Exibir "Before Grade 1".
+15. Senão, se readingIndex for maior que 16:
+    16. Exibir "Grade 16+".
+17. Senão:
+    18. Exibir "Grade" seguido de readingIndex.
+19. Retornar 0.

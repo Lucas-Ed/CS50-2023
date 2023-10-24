@@ -1,0 +1,9 @@
+Inicialize uma variável card_number como um número longo.
+Use um loop do-while para solicitar ao usuário o número do cartão de crédito.
+Dentro do loop, verifique se o card_number é não negativo. Se não for, continue solicitando a entrada até que seja válida.
+Inicialize variáveis sum1 e sum2 para rastrear as somas dos dígitos no número do cartão.
+Inicialize variáveis digit e length para rastrear o dígito atual e o comprimento do número do cartão.
+Use um loop para processar cada dígito do número do cartão, enquanto o número não for zero.
+Calcule a soma dos dígitos nas posições ímpares (1-based) e nas posições pares a partir da direita.
+Se a soma total for divisível por 10, verifique o formato do número do cartão e imprima "AMEX", "MASTERCARD", "VISA" ou "INVALID" de acordo com as condições especificadas.
+Caso contrário, imprima "INVALID".
